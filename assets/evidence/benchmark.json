@@ -1,0 +1,84 @@
+{
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.4"
+  },
+  "benchmark_notes": "Synthetic example image from scripts/create_example.py. Five consecutive trials, same process, end-to-end carve including energy recomputation. Hardware-dependent; repeat on team machine.",
+  "measured_records": [
+    {
+      "method": "Dynamic programming",
+      "source": "64x48",
+      "target": "58x44",
+      "median_total_ms": 51.58,
+      "trials_ms": [
+        55.806,
+        60.229,
+        42.643,
+        48.074,
+        51.58
+      ],
+      "first_seam_energy": 778.864,
+      "sum_seam_energies": 5243.144
+    },
+    {
+      "method": "Greedy",
+      "source": "64x48",
+      "target": "58x44",
+      "median_total_ms": 9.156,
+      "trials_ms": [
+        8.48,
+        9.156,
+        9.764,
+        9.769,
+        8.885
+      ],
+      "first_seam_energy": 888.844,
+      "sum_seam_energies": 10819.342
+    },
+    {
+      "method": "Graph cut (max-flow)",
+      "source": "64x48",
+      "target": "58x44",
+      "median_total_ms": 2832.095,
+      "trials_ms": [
+        5654.527,
+        4583.17,
+        2832.095,
+        2719.76,
+        2632.613
+      ],
+      "first_seam_energy": 778.864,
+      "sum_seam_energies": 5511.284
+    }
+  ],
+  "analytical_matrix": {
+    "DP": {
+      "seam_1_based": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "total_energy": 5.0
+    },
+    "Greedy": {
+      "seam_1_based": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "total_energy": 59.0
+    },
+    "Graph cut": {
+      "seam_1_based": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "total_energy": 5.0
+    }
+  }
+}

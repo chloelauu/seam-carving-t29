@@ -1,0 +1,14 @@
+{
+  "pytest_exit": 0,
+  "ruff_exit": 0,
+  "ruff_output": "All checks passed!\n",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0",
+    "ruff": "0.17.5",
+    "matplotlib": "3.11.2"
+  }
+}
