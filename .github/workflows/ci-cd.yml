@@ -31,9 +31,14 @@ jobs:
       - name: Static checks
         run: |
           python -m compileall -q seamcarve app.py
-          ruff check seamcarve tests app.py
+          ruff check seamcarve tests app.py scripts/hashes.py
       - name: Unit tests
         run: python -m pytest
+      # The manifest holds one hash per file, so it goes stale the moment someone edits one
+      # of those files and forgets to regenerate it. Checking it here turns that into a red
+      # run rather than a quietly wrong file that a reader opens months later.
+      - name: Evidence manifest matches the code
+        run: python -m scripts.hashes --check
 
   publish:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

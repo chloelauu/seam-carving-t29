@@ -5,10 +5,11 @@
   "scripts/ci_figure.py": "334a0c9dd8d8adc2ddd9e198282f9d7a8d97f61ae0fd3597e65415d1d463eedb",
   "scripts/create_example.py": "9acb83daf2b1706b5883eaaf8f439cf3d04f38a52f355d1e2b14cfda6416e15d",
   "scripts/evaluate.py": "84994b5cc6d2d59bfe14a35dc0399ea656ec267b2af43c964a64cba99527909f",
-  "seamcarve/core.py": "70d11d5cdfcf59d85d175204e412e50c85d9b4d13b2af594c609cae84ebe9568",
+  "scripts/hashes.py": "b4ebefe57481797123a0be5cb00a479d11da9fac691974a8f98c7a61ed4d79f8",
+  "scripts/last_column.py": "7776c04b68f5fa8795bc41755fddcb3330d46203a53cc09a9b457e4334d55f9c",
+  "seamcarve/core.py": "bc3b180bca3718137118612938761e90d489c0bc839f553b6759c0c87c1890b4",
   "seamcarve/__init__.py": "5b8aa979b690c2d277e89683f90c20148d11a076a04a3a44a9d14491073c75d1",
   "tests/test_app.py": "0cfc611319f191b125b6bea28b84e6bc21ff1ea92ecfcc37a9f08a3e2d94420e",
-  "tests/test_regressions.py": "11cf3927d57d68b0546c08409982dac101b3dc424225c025ab44bacd7c7f8622",
-  "tests/test_seamcarve.py": "021920a71c28eecfaccdcc82a0cccaef70d55b4eae7da486f73ada367c409bba",
-  ".github/workflows/ci-cd.yml": "eca336508ebb144e9811490cb6008a8f0daee6cb95cbca785b255785de8e69e5"
+  "tests/test_regressions.py": "848df6f8b05ba6f55c23118138ced69b71b60a38ce023e97551e4e936663dcf0",
+  "tests/test_seamcarve.py": "33269255dbedf0d4d0f3acb416444b524e638152448376189d9f1df04b41b629"
 }

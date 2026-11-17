@@ -2,3 +2,6 @@
 36 local automated cases passed on 15 November 2026.
 Ruff: All checks passed!
 No hosted GitHub Actions run is claimed by this local log.
+Note added 17 November 2026: a 21st core case was added after this log was recorded, so the suite
+is 37 cases (21 core, 7 regressions, 9 Streamlit) as the README and report section 7.3 state. The
+log above is left exactly as it was produced.
