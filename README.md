@@ -2,14 +2,27 @@
 
 A standalone learning/demo application for dynamic programming, greedy seam selection, and exact min-cut/max-flow seam selection. **No image-library seam carving functions are used.**
 
-## Install and run (Windows PowerShell)
+## Install and run
+
+Needs Python 3.11 or newer. From inside this folder:
 
 ```powershell
-py -3.11 -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
 ```
+
+The app opens in your browser (or go to http://localhost:8501). Press **Ctrl + C** in the terminal to stop it. If `streamlit` or `pip` is "not recognized", keep the `python -m` in front as shown.
+
+Optional, using a virtual environment:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+If PowerShell says running scripts is disabled when activating, first run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` (applies to the current terminal window only), or use Command Prompt and activate with `.venv\Scripts\activate.bat`.
 
 Choose an input image, algorithm, preprocessing limit, width/height targets, and seam order. Press **Carve image**. Tabs show before/after results, a slider displaying **every seam immediately before it is removed**, a projection of **all removed seams on the original image**, input Sobel energy, timings and downloadable output / step JSON. Width and height controls are interactive; reductions only (no enlargement).
 
